@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15 --git-lfs
+repo init -u https://github.com/neonred226/manifest -b 15 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/BaranAspect-Development/android-rom-build -b derp-15.0 .repo/local_manifests
+git clone https://github.com/neonred226/android-rom-build -b pixel .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -44,4 +44,4 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 
 
 echo "======= Export Done ======"
-lunch derp_topaz-userdebug && mka derp
+lunch aosp_topaz-bp1a-userdebug && make bacon
