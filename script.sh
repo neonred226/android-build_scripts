@@ -20,20 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-rm -rf hardware/qcom-caf/msm8996 \
-       hardware/qcom-caf/msm8998 \
-       hardware/qcom-caf/sdm845 \
-       hardware/qcom-caf/sm8150 \
-       hardware/qcom-caf/sm8250 \
-       hardware/qcom-caf/sm8350 \
-       hardware/qcom-caf/sm8450 \
-       hardware/qcom-caf/sm8550 \
-       hardware/qcom-caf/sm8650
-       
-echo "==========================="
-echo "Unnecessary dirs removed"
-echo "==========================="
-
 # Export
 export BUILD_USERNAME=TeamAspectPower
 export BUILD_HOSTNAME=crave
